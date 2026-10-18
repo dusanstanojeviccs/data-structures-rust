@@ -7,3 +7,28 @@ The crate will grow into a collection of data structures and algorithms I find i
 ## AI Policy
 
 Artisian code only, strict no AI policy in this repo.
+
+## Things I'll probably implement
+
+- [x] Queue
+- [x] BTree
+- [ ] LinkedList
+- [ ] RingBuffer
+- [ ] Stack
+- [ ] Heap
+- [ ] Dequeue
+- [ ] Priority Queue
+- [ ] AVL
+- [ ] RedBlackTree
+- [ ] SplayTree
+- [ ] B+ tree
+- [ ] Trie
+- [ ] HashMap
+- [ ] Swiss Table
+- [ ] Bloom
+- [ ] LSM
+- [ ] SSTable
+- [ ] WAL
+- [ ] LRU
+- [ ] Encodings
+- [ ] Sort algos
