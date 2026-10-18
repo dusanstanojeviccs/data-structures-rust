@@ -1,0 +1,12 @@
+[package]
+name = "data-structures-rust"
+version = "0.1.0"
+edition = "2024"
+description = "Hand-rolled data structures, written to learn Rust"
+license = "MIT"
+repository = "https://github.com/dusanstanojeviccs/data-structures-rust"
+readme = "README.md"
+keywords = ["data-structures", "collections"]
+categories = ["data-structures"]
+
+[dependencies]
