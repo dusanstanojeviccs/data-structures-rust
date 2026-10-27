@@ -1,14 +1,13 @@
-use data_structures_rust::linkedlist::LinkedList;
+use data_structures_rust::ringbuffer::RingBuffer;
 
 
 
 pub fn main() {
-  let mut ll: LinkedList<u32> = LinkedList::new();
-  ll.add(10);
-  ll.add(20);
-  ll.add(30);
-  ll.print();
-  println!("------");
-  ll.remove_at_index(2);
-  ll.print();
+  let mut rb: RingBuffer<u32, 3> = RingBuffer::new();
+  rb.add(10);
+  rb.add(20);
+  rb.add(30);
+  rb.add(40);
+
+  rb.consume_all().iter().for_each(|x| println!("{}", *x));
 }

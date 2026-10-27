@@ -12,7 +12,7 @@ Artisian code only, strict no AI policy in this repo.
 
 - [x] Queue
 - [x] BTree
-- [ ] LinkedList
+- [x] LinkedList
 - [ ] RingBuffer
 - [ ] Stack
 - [ ] Heap
