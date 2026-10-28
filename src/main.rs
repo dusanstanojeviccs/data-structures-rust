@@ -1,13 +1,15 @@
-use data_structures_rust::ringbuffer::RingBuffer;
+use data_structures_rust::stack::Stack;
 
 
 
 pub fn main() {
-  let mut rb: RingBuffer<u32, 3> = RingBuffer::new();
-  rb.add(10);
-  rb.add(20);
-  rb.add(30);
-  rb.add(40);
+  let mut s: Stack<u32> = Stack::new();
+  s.push(10);
+  s.push(20);
+  s.push(30);
+  s.push(40);
 
-  rb.consume_all().iter().for_each(|x| println!("{}", *x));
+  println!("{}", s.pop().unwrap());
+  println!("{}", s.pop().unwrap());
+  println!("{}", s.pop().unwrap());
 }
