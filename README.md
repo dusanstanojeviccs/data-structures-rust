@@ -14,8 +14,8 @@ Artisian code only, strict no AI policy in this repo.
 - [x] BTree
 - [x] LinkedList
 - [x] RingBuffer
-- [ ] Stack
-- [ ] Heap
+- [x] Stack
+- [x] Heap
 - [ ] Dequeue
 - [ ] Priority Queue
 - [ ] AVL

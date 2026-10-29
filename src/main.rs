@@ -1,15 +1,14 @@
-use data_structures_rust::stack::Stack;
+use data_structures_rust::heap::Heap;
 
 
 
 pub fn main() {
-  let mut s: Stack<u32> = Stack::new();
-  s.push(10);
-  s.push(20);
-  s.push(30);
-  s.push(40);
+  let mut s: Heap<u32, 3> = Heap::new();
+  s.add(10);
+  s.add(30);
+  s.add(20);
 
-  println!("{}", s.pop().unwrap());
-  println!("{}", s.pop().unwrap());
-  println!("{}", s.pop().unwrap());
+  println!("{}", s.remove_top().unwrap());
+  println!("{}", s.remove_top().unwrap());
+  println!("{}", s.remove_top().unwrap());
 }
