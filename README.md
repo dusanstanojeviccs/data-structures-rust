@@ -16,7 +16,7 @@ Artisian code only, strict no AI policy in this repo.
 - [x] RingBuffer
 - [x] Stack
 - [x] Heap
-- [ ] Dequeue
+- [x] Deque
 - [ ] Priority Queue
 - [ ] AVL
 - [ ] RedBlackTree

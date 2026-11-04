@@ -1,14 +1,40 @@
-use data_structures_rust::heap::Heap;
+use data_structures_rust::deque::Deque;
 
 
 
 pub fn main() {
-  let mut s: Heap<u32, 3> = Heap::new();
-  s.add(10);
-  s.add(30);
-  s.add(20);
+  let mut d = Deque::new();
+  d.enqueue_top(10);
+  println!("{}", d.dequeue_top().unwrap());
 
-  println!("{}", s.remove_top().unwrap());
-  println!("{}", s.remove_top().unwrap());
-  println!("{}", s.remove_top().unwrap());
+
+  d.enqueue_top(10);
+  d.enqueue_top(20);
+  println!("{}", d.dequeue_top().unwrap());
+  println!("{}", d.dequeue_top().unwrap());
+
+
+  d.enqueue_top(10);
+  d.enqueue_top(20);
+  println!("{}", d.dequeue_bottom().unwrap());
+  println!("{}", d.dequeue_bottom().unwrap());
+
+
+  d.enqueue_bottom(10);
+  println!("{}", d.dequeue_bottom().unwrap());
+
+  println!("pre {:?}", d);
+  d.enqueue_bottom(10);
+  println!("mid {:?}", d);
+  d.enqueue_bottom(20);
+  println!("{:?}", d);
+  println!("{}", d.dequeue_bottom().unwrap());
+  println!("{}", d.dequeue_bottom().unwrap());
+
+
+  d.enqueue_bottom(10);
+  d.enqueue_bottom(20);
+  println!("{}", d.dequeue_top().unwrap());
+  println!("{}", d.dequeue_top().unwrap());
+
 }
